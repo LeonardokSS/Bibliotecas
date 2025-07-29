@@ -16,12 +16,12 @@ print("EXEL")
 ex = pd.read_excel('cardapio_restaurante.xlsx', sheet_name='Cardápio')
 print(ex)
 
-#Leitura de arquivos em um banco de dados
+ #Leitura de arquivos em um banco de dados
 Bc = pd.read_csv('funcionarios.csv')
 print(Bc)
 
 #Leitura de JSON e conversão para DataFrame
-Js = pd.read_json("pratos.json")  
+Js = pd.read_json("pratos.json") 
 
 
 # Leitura dos 5 primeiros e últimos registros de um DataFrame
@@ -38,7 +38,7 @@ print(df["Nomes"])
 print(df["Idades"])
 
 #Leitura pela posição 
-#DataFrame.iloc[], Esse método seleciona colunas e linhas por numeros inteiros começando pelo 0
+#DataFrame.iloc[], Esse método seleciona colunas e linhas por numeros inteiros começando pe'lo 0
 df2 = pd.DataFrame({
     'nome': ['Ana', 'Bruno', 'Carlos'],
     'idade': [23, 35, 30],
@@ -46,7 +46,7 @@ df2 = pd.DataFrame({
 })
 
 #print(variavel.iloc[linha,coluna])
-#O slice serve para pegar uma parte do DataFrame
+#O primeiro numero é incluido, o segundo não conta, apenas a posição anterior. Vazio começo = desde o início Vazio fim = até o final
 # Pega a linha 0 e coluna 1 (idade de Ana)
 print(df2.iloc[0, 1])  # Saída: 23
 

@@ -3,6 +3,15 @@ import pandas as pd
 df = pd.read_excel('cardapio_restaurante.xlsx', sheet_name='Cardápio')
 print (df)
 
+
+#Mostrar colunas 
+#Mostra apenas as colunas de preço e de tempo
+print('Separando por colunas')
+
+print (df[['Preço', 'Categoria']])
+
+
+
 # A filtragem dos dados pode ser feita usando condições como: nome_variavel['nome_coluna'] > valor
 
 filtro_preco_b = df['Preço'] > 10  
