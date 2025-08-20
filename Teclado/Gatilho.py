@@ -1,4 +1,5 @@
 import keyboard
+import time
 
 
 Confirmacao = input("deseja começar? s/n")
@@ -20,6 +21,15 @@ if Confirmacao == "s":
     keyboard.send('g')
     keyboard.send('r')
     keyboard.send('enter')
+    time.sleep(1)
+    keyboard.send('enter')
+    time.sleep(1)
+    keyboard.send('enter')
+    time.sleep(1)
+    keyboard.send('enter')
+    time.sleep(40)
+    keyboard.press_and_release('win+r')
+    keyboard.send
 
 elif Confirmacao == "n":
      print ('Cancelando operação')
