@@ -11,7 +11,3 @@ os.stat('Me_apague.txt') #Retorna todas as informações sobre o arquivo
 os.path.getsize('caminho')	#Retorna o tamanho de um arquivo em bytes.
 
 os.path.getmtime('caminho')	#Retorna a data da última modificação.
-
-
-
-

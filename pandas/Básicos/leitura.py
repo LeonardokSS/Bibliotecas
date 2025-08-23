@@ -13,7 +13,7 @@ print (di)
 
 #Lê o arquivo Excel e carrega a tabela em um DataFrame
 print("EXEL")
-ex = pd.read_excel('cardapio_restaurante.xlsx', sheet_name='Cardápio')
+ex = pd.read_excel('Dados/cardapio_restaurante.xlss', sheet_name='Cardápio')
 print(ex)
 
  #Leitura de arquivos em um banco de dados
@@ -21,7 +21,7 @@ Bc = pd.read_csv('funcionarios.csv')
 print(Bc)
 
 #Leitura de JSON e conversão para DataFrame
-Js = pd.read_json("pratos.json") 
+Js = pd.read_json("Dados/pratos.json") 
 
 
 # Leitura dos 5 primeiros e últimos registros de um DataFrame
